@@ -9,7 +9,7 @@
 .P4 { grid-area: P4; }
 .P5 { grid-area: P5; }
 .P6 { grid-area: P6; }
-
+.D { grid-area: D; }
 
 .grid-item-C{
 background-color: rgb(222, 74, 0);
@@ -19,53 +19,59 @@ font-size: 30px;
 text-align: center;
 }
 .grid-item-P1{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(115, 222, 0, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
 .grid-item-P2{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(0, 222, 207, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
 .grid-item-P3{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(0, 4, 222, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
 .grid-item-P4{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(222, 0, 189, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
 .grid-item-P5{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(115, 222, 0, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
 .grid-item-P6{
-background-color: rgba(222, 74, 0, 0);
+background-color: rgba(0, 222, 207, 0.712);
 border: 1px solid rgba(0, 0, 0, 0.8);
 padding: 20px;
 font-size: 20px;
 text-align: center;
 }
+.grid-item-D{
+background-color: rgba(0, 0, 0, 0);
+}
 .grid-container1 {
   display: grid;
+  background-color: rgb(172, 141, 0);
+  grid-template-rows: 80px 80px 10px;
+  grid-template-columns: 200px 250px 250px 250px 250px 250px;
   grid-template-areas:
-    'C C C C C C C '
+    'C C C C C C'
     'P1 P2 P3 P4 P5 P6 '
-  gap: 10px;
+    'D D D D D D'
 }
 .grid-container1 > div {
   text-align: left;
@@ -80,62 +86,70 @@ text-align: center;
 
 <div class="grid-container1">
   <div class="grid-item-C">BOLETOS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>  
-  <div class="grid-item-P3">P3</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>  
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">GORROS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>  
-  <div class="grid-item-P3">P3</div>
-  <div class="grid-item-P4">P4</div>
-  <div class="grid-item-P5">P5</div>
-  <div class="grid-item-P6">P6</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>  
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-P4">*Imajen* *Precio*</div>
+  <div class="grid-item-P5">*Imajen* *Precio*</div>
+  <div class="grid-item-P6">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">GAFAS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>
-  <div class="grid-item-P3">P3</div>  
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">CHAQUETAS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>
-  <div class="grid-item-P3">P3</div>  
-  <div class="grid-item-P4">P4</div>
-  <div class="grid-item-P5">P5</div>
-  <div class="grid-item-P6">P6</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>
+  <div class="grid-item-P3">*Imajen* *Precio*</div>  
+  <div class="grid-item-P4">*Imajen* *Precio*</div>
+  <div class="grid-item-P5">*Imajen* *Precio*</div>
+  <div class="grid-item-P6">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">CAMISETAS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>
-  <div class="grid-item-P3">P3</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">GUANTES</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>  
-  <div class="grid-item-P3">P3</div>
-  <div class="grid-item-P4">P4</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>  
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-P4">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">PANTALONES</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>  
-  <div class="grid-item-P3">P3</div>
-  <div class="grid-item-P4">P4</div>
-  <div class="grid-item-P5">P5</div>
-  <div class="grid-item-P6">P6</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>  
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-P4">*Imajen* *Precio*</div>
+  <div class="grid-item-P5">*Imajen* *Precio*</div>
+  <div class="grid-item-P6">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 <div class="grid-container1">
   <div class="grid-item-C">ZAPATILLAS</div>
-  <div class="grid-item-P1">P1</div>
-  <div class="grid-item-P2">P2</div>  
-  <div class="grid-item-P3">P3</div>
-  <div class="grid-item-P4">P4</div>
+  <div class="grid-item-P1">*Imajen* *Precio*</div>
+  <div class="grid-item-P2">*Imajen* *Precio*</div>  
+  <div class="grid-item-P3">*Imajen* *Precio*</div>
+  <div class="grid-item-P4">*Imajen* *Precio*</div>
+  <div class="grid-item-D"> </div>
 </div>
 </body>
 </html>
